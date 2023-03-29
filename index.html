@@ -20,8 +20,8 @@
             </div>
             
             <nav class="navi">
-                <a href="#cash_nav">Стоимость</a>
-                <a href="#reviews_nav">Отзывы</a>
+                <a class="navi_link" href="#cash_nav">Стоимость</a>
+                <a class="navi_link" href="#reviews_nav">Отзывы</a>
             </nav>
 
             <a class="header_contacts" href="+7(123)4567890"><img src="icons/phone-solid.svg" width="13">+7 (123) 456-78-90</a>
@@ -30,7 +30,7 @@
         <section class="header_record">  
             <h1>Лучший способ<br> заговорить на<br> английском</h1>
 
-            <p>Занимайся онлайн в удобное время в<br>
+            <p class="header_text">Занимайся онлайн в удобное время в<br>
                  любом месте! Запишитесь на бесплатный<br>
                  пробный урок уже сегодня.
             </p>
@@ -75,22 +75,7 @@
                         <p>Преподаватель занимается только с<br> Вами и Вы учитесь намного быстрее.</p>
                     </div>
                 </div>
-                <!--<div class="techno">
-                    <div class="icon_bord">
-                        <svg class="icon_tech" src="icons/network_icon.svg" alt="network" width="25"> </svg>
-                        <h4>Современный язык</h4>
-                        <p>Изучайте актуальный язык, общаясь<br> с преподавателем на современные<br> темы</p>
-                    </div>
-                </div>
-
-                <div class="techno">
-                    <div class="icon_bord">
-                        <svg class="icon_tech" src="icons/user-regular.svg" alt="user" width="25"> </svg>
-                        <h4>Индивидуальные занятия</h4>
-                        <p>Преподаватель занимается только с<br> Вами и Вы учитесь намного быстрее.</p>
-                    </div>
-                </div>-->
-            
+                            
         </section>
 
         <section class="skill_main">
@@ -154,7 +139,7 @@
             <h2 class="cash_footer">Наши абонементы</h2>
             <div class="prices">
                 <div class="price">
-                    
+                    <div>
                         <p class="price_title">1 месяц</p>
                         <p class="rate_price">12 000 руб/ 8 уроков</p>
                         <div class="price_details">
@@ -171,63 +156,63 @@
                                 <p>индивидуальный уроки</p>
                             </div>
                         </div>
-                    
+                    </div>
                     <button class="button_price">Записаться</button>
                 </div>
 
                 <div class="price">
-                    
-                    <p class="price_title">3 месяца</p>
-                    <p class="rate_price">32 000 руб/ 24 урока</p>
-                    <div class="price_details">
-                        <div class="price_detail">
-                            <svg class="check-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                            <p>24 урока</p>
-                        </div>
-                        <div class="price_detail">
-                            <svg class="check-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                            <p>занятия 2 раза в неделю</p>
-                        </div>
-                        <div class="price_detail">
-                            <svg class="check-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                            <p>индивидуальный уроки</p>
-                        </div>
-                        <div class="price_detail">
-                            <svg class="check-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                            <p>бесплатный разговорный клуб</p>
+                    <div>
+                        <p class="price_title">3 месяца</p>
+                        <p class="rate_price">32 000 руб/ 24 урока</p>
+                        <div class="price_details">
+                            <div class="price_detail">
+                                <svg class="check-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                <p>24 урока</p>
+                            </div>
+                            <div class="price_detail">
+                                <svg class="check-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                <p>занятия 2 раза в неделю</p>
+                            </div>
+                            <div class="price_detail">
+                                <svg class="check-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                <p>индивидуальный уроки</p>
+                            </div>
+                            <div class="price_detail">
+                                <svg class="check-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                <p>бесплатный разговорный клуб</p>
+                            </div>
                         </div>
                     </div>
-                
                     <button class="button_price">Записаться</button>
                 </div>
 
                 <div class="price">
-                    
-                    <p class="price_title">6 месяцев</p>
-                    <p class="rate_price">55 000 руб/ 58 уроков</p>
-                    <div class="price_details">
-                        <div class="price_detail">
-                            <svg class="check-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                            <p>58 уроков</p>
-                        </div>
-                        <div class="price_detail">
-                            <svg class="check-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                            <p>занятия 2 раза в неделю</p>
-                        </div>
-                        <div class="price_detail">
-                            <svg class="check-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                            <p>индивидуальный уроки</p>
-                        </div>
-                        <div class="price_detail">
-                            <svg class="check-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                            <p>бесплатный разговорный клуб</p>
-                        </div>
-                        <div class="price_detail">
-                            <svg class="check-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                            <p>бесплатная заморозка абониментов</p>
+                    <div>
+                        <p class="price_title">6 месяцев</p>
+                        <p class="rate_price">55 000 руб/ 58 уроков</p>
+                        <div class="price_details">
+                            <div class="price_detail">
+                                <svg class="check-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                <p>58 уроков</p>
+                            </div>
+                            <div class="price_detail">
+                                <svg class="check-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                <p>занятия 2 раза в неделю</p>
+                            </div>
+                            <div class="price_detail">
+                                <svg class="check-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                <p>индивидуальный уроки</p>
+                            </div>
+                            <div class="price_detail">
+                                <svg class="check-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                <p>бесплатный разговорный клуб</p>
+                            </div>
+                            <div class="price_detail">
+                                <svg class="check-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                <p>бесплатная заморозка абониментов</p>
+                            </div>
                         </div>
                     </div>
-                
                     <button class="button_price">Записаться</button>
                 </div>
             </div>

@@ -34,7 +34,7 @@ header{
     background: #d6d3d1 url(photo/hero.jpg); /* Фоновый цвет и фоновый рисунок*/
     /*object-fit: cover;
     object-position: top;*/
-    background-size: contain;
+    background-size: cover;
     background-position: center top;
     background-repeat: no-repeat;
     /*background-attachment: fixed; /* Фон страницы фиксируется */ 
@@ -46,12 +46,19 @@ header{
         
 }
 
+
+
 .navi{
     display: flex;
     gap: 20px;
     padding-top: 45px;
     text-decoration: none;
     color: var(--text-color);
+}
+
+.navi_link{
+    text-decoration: none;
+    color: #d6d3d1;
 }
 
 .header_contacts{
@@ -144,6 +151,7 @@ button{
 
 .skill_image{
     width: 450px;
+    object-fit: contain;
     
 }
 .skill_main{
@@ -210,7 +218,7 @@ button{
 
 .reviews_human{
     padding: 20px 0px 20px 0px;
-    width: 600px;
+    max-width: 600px;
     border-bottom: 1px solid;
 }
 
@@ -223,6 +231,7 @@ button{
     justify-content: space-around;
     margin: auto;
     padding-top: 60px;
+    max-width: 1024px;
     
 }
 .price{
@@ -236,6 +245,7 @@ button{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    
 
 }
 
@@ -292,7 +302,7 @@ li::before{
     text-align: center;
     text-decoration: none;
     color:#f97316;
-    width: 250px;
+    width: auto;
     height: 30px;
     font-size: 16px;
     border-radius: 5px;
@@ -319,6 +329,9 @@ footer{
 }
 
 .footer_phone{
+    display: flex;
+    align-items: center;
+    gap: 10px;
     color: #57534e;
     text-decoration: none;
 }
@@ -331,4 +344,154 @@ footer{
 .footer_mail{
     color: #78716c;
     text-decoration: none;
+}
+
+@media(max-width: 1023px){
+
+    .techologi{
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .skill_main{
+        flex-wrap: wrap;
+        
+    }
+
+    .skill{
+        padding: 0px 20px 0px 20px;
+    }
+
+    .prices{
+        flex-wrap: wrap;
+    }
+
+    .price{
+        width: auto;
+    }
+
+    .price_title{
+        font-size: 22px;
+        line-height: 22px;
+    }
+
+    .rate_price{
+        font-size: 26px;
+        line-height: 26px;
+    }
+
+    .price_detail{
+        font-size: 18px;
+        line-height: 18px;
+    }
+
+    
+}
+
+@media(max-width: 800px){
+
+    .header_basis{
+        flex-wrap: wrap;
+    }
+
+    .header_record{
+        padding-left: 20px;
+    }
+
+    .skill_image{
+        width: -webkit-fill-available;
+    }
+
+    .buyers{
+        padding: 0 20px 0 20px;
+    }
+    
+    .buyers_entry{
+        flex-wrap: wrap;
+    }
+
+    .input_win{
+        flex-grow: 1;
+    }
+
+    button{
+        flex-grow: 1;
+    }
+
+    .footer_contacts{
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+
+
+@media(max-width: 426px){
+
+    .header_basis{
+        flex-wrap: wrap;
+    }
+
+    
+
+    .header_text{
+        width: 30%;
+    }
+
+    
+
+    p{
+        text-align: start;
+    }
+
+    
+
+    .buyers_entry{
+        flex-wrap: wrap;
+    }
+
+    .input_win{
+        flex-grow: 1;
+    }
+
+    button{
+        flex-grow: 1;
+    }
+
+    .prices{
+        flex-direction: column;
+    }
+
+    .price{
+        width: auto;
+    }
+
+    .price_title{
+        font-size: 22px;
+        line-height: 22px;
+    }
+
+    .rate_price{
+        font-size: 26px;
+        line-height: 26px;
+    }
+
+    .price_detail{
+        font-size: 18px;
+        line-height: 18px;
+    }
+
+    h2{
+        text-align: center;
+    }
+
+    .reviews_human{
+        padding: 20px 20px 20px 20px;
+    }
+
+    .reviews_user{
+        font-size: 18px;
+        line-height: 18px;
+        font-weight: 400;
+    }
+    
 }
